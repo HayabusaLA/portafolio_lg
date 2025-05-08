@@ -1,0 +1,93 @@
+/* Estilos generales de la sección */
+.about-section {
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 2rem auto; /* Centra horizontalmente */
+  display: flex;
+  gap: 2rem; /* Espacio entre columnas */
+  justify-content: space-between; /* Espaciado entre columnas */
+  align-items: flex-start; /* Alinea las columnas al inicio */
+  margin-bottom: 7rem; /* Espacio adicional debajo de la sección */
+}
+
+/* Contenedor principal flex */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Columna de descripción */
+.about-description {
+  flex: 3;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-description h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about-description p {
+  margin: 0.5rem 0;
+}
+
+.about-description a {
+  color: #2c3e50;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid #2c3e50;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+
+.about-description a:hover {
+  color: #1a252f;
+  border-bottom-color: #1a252f;
+}
+
+/* Columna de información */
+.about-info {
+  flex: 2;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-info h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.info-item {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.info-item strong {
+  display: inline-block;
+  min-width: 100px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.fade-element {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

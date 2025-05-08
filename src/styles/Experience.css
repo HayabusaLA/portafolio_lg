@@ -1,0 +1,87 @@
+/* Efectos de animación */
+.experience-card {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.experience-card:nth-child(even) {
+  transform: translateX(50px);
+}
+
+.experience-card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Estilos existentes (mantén estos) */
+.experience-section {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-section h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.experience-card {
+  display: flex;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.experience-card .date {
+  background: #888;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+}
+
+.experience-card .content {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-card .content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card .content p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-card {
+    flex-direction: column;
+  }
+  
+  .experience-card .date {
+    min-width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .experience-card .content {
+    padding: 1rem;
+  }
+}

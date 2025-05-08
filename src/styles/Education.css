@@ -1,0 +1,118 @@
+/* Efectos de animación */
+.education-card {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.education-card:nth-child(even) {
+  transform: translateX(50px);
+}
+
+.education-card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos existentes (mantén estos) */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.education-title-section {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.education-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.education-card-left {
+  flex: 0 0 250px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+.education-year {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.education-institution {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.education-card-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.education-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.education-description {
+  font-size: 14px;
+  color: #555555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-card {
+    flex-direction: column;
+  }
+  
+  .education-card-left {
+    flex: 0 0 150px;
+    width: 100%;
+  }
+  
+  .education-card-right {
+    padding: 15px;
+  }
+}
