@@ -31,7 +31,7 @@ const Certificates = () => {
 
   return (
     <section className="certificates-section">
-      <h1 className="section-title">Certificados y CV</h1>
+      <h1 className="section-title">Certificados</h1>
       <div className="certificates-container">
         {certificates.map((cert, index) => (
           <div className="certificate-card" key={index}>

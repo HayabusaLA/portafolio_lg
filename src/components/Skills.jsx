@@ -2,12 +2,17 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/Skills.css';
 
 const skills = [
-  { name: 'HTML', percent: 80, color: '#FF6B6B' },
-  { name: 'CSS', percent: 75, color: '#4ECDC4' },
+  { name: 'HTML', percent: 90, color: '#FF6B6B' },
+  { name: 'CSS', percent: 85, color: '#4ECDC4' },
   { name: 'JavaScript', percent: 60, color: '#FFD166' },
-  { name: 'C#', percent: 60, color: '#06D6A0' },
-  { name: 'Bootstrap', percent: 75, color: '#118AB2' },
-  { name: 'Python', percent: 70, color: '#073B4C' }
+  { name: 'C#', percent: 80, color: '#06D6A0' },
+  { name: 'Bootstrap', percent: 60, color: '#118AB2' },
+  { name: 'Python', percent: 80, color: '#073B4C' },
+  { name: 'Microsoft Office', percent: 80, color: '#FF6B6B' },
+  { name: 'PowerBI', percent: 75, color: '#073B4C' },
+  { name: 'IOT', percent: 90, color: '#073B4C' },
+  { name: 'Machine Learning', percent: 60, color: '#073B4C' },
+  { name: 'Unity', percent: 90, color: '#073B4C' },
 ];
 
 const Skills = () => {
@@ -60,7 +65,7 @@ const Skills = () => {
 
   return (
     <section className="progress-skills" ref={skillsRef}>
-      <h2 className="skills-title">Professional Skills</h2>
+      <h2 className="skills-title">Habilidades Profesionales</h2>
       {skills.map((skill, index) => (
         <div 
           className="skill-row" 

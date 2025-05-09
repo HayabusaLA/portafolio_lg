@@ -34,11 +34,21 @@
 }
 
 .education-title-section {
-  font-size: 24px;
+  font-size: 32px; /* Ajusta el tamaño de la fuente */
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
-  color: #333333;
+  color: #000000; /* Cambia el color si es necesario */
+  position: relative;
+}
+
+.education-title-section::after {
+  content: "";
+  display: block;
+  width: 50px; /* Ajusta el ancho de la línea */
+  height: 3px; /* Ajusta el grosor de la línea */
+  background-color: #007bff; /* Cambia el color de la línea */
+  margin: 8px auto 0; /* Centra la línea debajo del texto */
 }
 
 .education-card {

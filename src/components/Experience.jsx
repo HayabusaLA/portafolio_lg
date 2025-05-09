@@ -7,7 +7,6 @@ const Experience = () => {
   const experienceRef = useRef(null);
   const cardRefs = useRef([]);
 
-  // Inicializa los refs para cada tarjeta
   useEffect(() => {
     cardRefs.current = cardRefs.current.slice(0, 3);
   }, []);
@@ -26,13 +25,12 @@ const Experience = () => {
       },
       {
         threshold: 0.1,
-        rootMargin: "0px 0px -100px 0px" // Activa la animación un poco antes
+        rootMargin: "0px 0px -100px 0px"
       }
     );
 
     const currentRef = experienceRef.current;
     if (currentRef) {
-      // Observar cada tarjeta individualmente
       cardRefs.current.forEach(card => {
         if (card) observer.observe(card);
       });
@@ -55,33 +53,42 @@ const Experience = () => {
         {[
           {
             date: "Febrero 2023 - Julio 2023",
-            title: "Proyecto Titor",
+            title: "Crack the Code - Proyecto Titor",
             position: "Desarrollador de Videojuegos en Unity",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at felis id turpis tincidunt facilisis."
+            description: "Fungi como el diseñador, desarrollador y programador principal en el proyecto Titor, un videojuego educativo para la enseñanza de programación a niños interesados en el tema. Utilizando Unity y C#, implementé mecánicas de juego, diseño de niveles y optimización del rendimiento.",
+            backgroundImage: require('../assets/titor.png')
           },
           {
             date: "Febrero 2024 - Julio 2024",
-            title: "DocCare Tracker",
+            title: "Freelance Developer - DocCare Tracker",
             position: "Desarrollador Móvil",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at felis id turpis tincidunt facilisis."
+            description: "Apoye en el desarrollo de una aplicación móvil para la gestión de citas médicas y seguimiento de pacientes. Utilizando React Native, contribuí en la implementación de funcionalidades clave y optimización del rendimiento de la aplicación.",
+            backgroundImage: require('../assets/doccare.png')
           },
           {
             date: "Febrero 2023 - Julio 2024",
-            title: "Aprendizaje para todos",
+            title: "Aprendizaje para todos - Enseñanza a nivel medio superior",
             position: "Tutor particular de nivel escolar intermedio",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at felis id turpis tincidunt facilisis."
+            description: "Impartí clases de matemáticas y física a estudiantes de secundaria y preparatoria, ayudando a mejorar su comprensión y rendimiento académico.",
+            backgroundImage: require('../assets/apt.png')
           }
         ].map((exp, index) => (
           <div 
             key={index}
             ref={el => cardRefs.current[index] = el}
             className={`experience-card ${visibleCards.includes(index) ? 'visible' : ''}`}
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${exp.backgroundImage})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
           >
             <div className="date">{exp.date}</div>
             <div className="content">
               <h3>{exp.title}</h3>
-              <p>{exp.position}</p>
-              <p>{exp.description}</p>
+              <p className="position">{exp.position}</p>
+              <p className="description">{exp.description}</p>
             </div>
           </div>
         ))}

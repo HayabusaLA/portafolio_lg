@@ -61,18 +61,29 @@ const About = () => {
 
   return (
     <section id="about" ref={aboutRef}>
-      <h1 className={`section-title fade-element ${visibleElements >= 1 ? 'visible' : ''}`}>About</h1>
+      <h1 className={`section-title fade-element ${visibleElements >= 1 ? 'visible' : ''}`}>Sobre mí</h1>
       
       <div className="about-section">
         <div className={`about-description fade-element ${visibleElements >= 2 ? 'visible' : ''}`}>
           <p>
             ¡Hola! Soy Luis Gomez<br />
-            Abarca Gómez. Desarrollador Full-stack, Diseñador de Videojuegos y Analista de datos.
-          </p>
-          <p>
-            Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, 
-            Now UI Kit and FontAwesome, this modern and responsive design template is perfect 
-            to showcase your portfolio, skills and experience. <a href="#learn-more">Learn More</a>
+            Desarrollador Full-stack, Diseñador de Videojuegos y Analista de datos.
+            Apasionado de la tecnología, he trabajado
+            en proyectos académicos y personales,
+            abarcando desde simuladores hasta bases
+            de datos y programas de cálculo. He
+            liderado la creación de un sistema integral
+            que combina videojuego, plataforma web y
+            base de datos en SQL Server. Soy proactivo
+            en mis tareas y colaboraciones, asumiendo
+            la iniciativa en proyectos y liderando
+            equipos con eficiencia bajo presión. Mi
+            enfoque en la resolución de problemas es
+            objetivo y eficaz. Mi historial refleja
+            excelencia, creatividad y compromiso.
+            Estoy seguro de que mis habilidades
+            agregarán un valor significativo a cualquier
+            proyecto o equipo.
           </p>
         </div>
 

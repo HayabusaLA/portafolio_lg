@@ -54,24 +54,24 @@ function Education() {
   const educationData = [
     {
       image: itesmImage,
-      year: "2021 - 2024",
-      institution: "ITESM",
+      year: "Agosto 2021 - 2025 (esperado)",
+      institution: "Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)",
       title: "Ingeniería en Tecnologías Computacionales",
-      description: "Estudios enfocados en desarrollo de software, estructuras de datos, y diseño de interfaces."
+      description: "Estudios enfocados en desarrollo de software, estructuras de datos, y diseño de interfaces para lograr una formacion como ingerniero Full-stack pero ademas con conocimientos en diversas areas como matematicas, fisica y economia."
     },
     {
       image: utecImage,
-      year: "2024 - 2024",
-      institution: "UTEC",
+      year: "Julio 2024 - Diciembre 2024",
+      institution: "Universidad de Ingeniería y Tecnología (UTEC)",
       title: "Intercambio tradicional",
-      description: "Enfoque en ciencias exactas y desarrollo de habilidades analíticas."
+      description: "Enfoque en ciencia de datos y machine learning ademas del manejo de herramientas en la nube para el fortalecimiento de mis hbailidades y conocimientos."
     }
   ];
 
   return (
     <div className="education-container" ref={educationRef}>
       {/* Título de la sección */}
-      <h2 className="education-title-section fade-element">Educación</h2>
+      <h2 className="education-title-section">Educación</h2>
 
       {educationData.map((edu, index) => (
         <div 
