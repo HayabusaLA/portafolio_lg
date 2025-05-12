@@ -6,6 +6,7 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Certificates from './components/Certificates';
 import Contact from './components/Contact';
+import Projects from './components/Projects';
 import './App.css';
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
       <div id="contact">
         <Contact />
       </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      
     </div>
   );
 }

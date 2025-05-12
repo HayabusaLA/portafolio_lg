@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/Header.css';
-import cvPDF from '../assets/CV_Profesional.pdf'; // Asegúrate de tener tu archivo CV.pdf en assets
-
-const Header = () => {
+import cvPDF from '../assets/CV_ProfesionalCorregido.pdf'; // Asegúrate de tener tu archivo CV.pdf en assets
+const Header = ({ toggleDesign }) => {
   const [scrolled, setScrolled] = useState(false);
   const [inView, setInView] = useState(false);
   const [showCVModal, setShowCVModal] = useState(false);
+  const [isFrutigerAero, setIsFrutigerAero] = useState(false); // Estado para el tema
   const headerRef = useRef(null);
 
   useEffect(() => {
@@ -40,27 +40,31 @@ const Header = () => {
   const openCVModal = () => setShowCVModal(true);
   const closeCVModal = () => setShowCVModal(false);
 
+  
   return (
-    <header 
-      className={`header-section ${inView ? 'in-view' : ''} ${scrolled ? 'scrolled' : ''}`} 
+    <header
+      className={`header-section ${inView ? 'in-view' : ''} ${scrolled ? 'scrolled' : ''} ${
+        isFrutigerAero ? 'frutiger-aero-theme' : ''
+      }`}
       ref={headerRef}
     >
       <div className={`nav-header ${scrolled ? 'scrolled' : ''}`}>
         <ul className="nav-list">
-          <li className="nav-item"><a href="#about">Sobre mi</a></li>
+          <li className="nav-item"><a href="#about">Sobre mí</a></li>
           <li className="nav-item"><a href="#experience">Experiencia</a></li>
           <li className="nav-item"><a href="#education">Educación</a></li>
           <li className="nav-item"><a href="#skills">Habilidades</a></li>
           <li className="nav-item"><a href="#portfolio">Certificados</a></li>
           <li className="nav-item"><a href="#contact">Contacto</a></li>
+          <li className="nav-item"><a href="#contact">Proyectos en desarrollo</a></li>
         </ul>
       </div>
-      
+
       <div className="header-background">
         <div className="text-overlay">
           <h1 className="header-title">Luis Adrián</h1>
           <p className="header-description">
-            WEB DEVELOPER, VIDEOGAMES DESIGNER, DATA ANALIST
+            Estudiante de Ingeniería en Tecnologías Computacionales en el ITESM Campus Estado de México. 
           </p>
           <div className="cv-button-container">
             <button className="cv-button" onClick={openCVModal}>

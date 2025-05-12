@@ -63,7 +63,7 @@ function Education() {
       image: utecImage,
       year: "Julio 2024 - Diciembre 2024",
       institution: "Universidad de Ingeniería y Tecnología (UTEC)",
-      title: "Intercambio tradicional",
+      title: "Intercambio",
       description: "Enfoque en ciencia de datos y machine learning ademas del manejo de herramientas en la nube para el fortalecimiento de mis hbailidades y conocimientos."
     }
   ];

@@ -130,6 +130,21 @@
   line-height: 1.6;
 }
 
+.experience-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.experience-link:hover {
+  background-color: #0056b3;
+}
+
 /* EFECTOS DE SCROLL VISIBLES */
 .experience-card.visible {
   opacity: 1;

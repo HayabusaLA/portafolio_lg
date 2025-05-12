@@ -10,29 +10,21 @@ const About = () => {
     const handleIntersection = (entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Reiniciar el estado de animación
           setVisibleElements(0);
-          
-          // Limpiar timeout anterior si existe
           if (animationTimeout.current) {
             clearTimeout(animationTimeout.current);
           }
-          
-          // Contamos los elementos hijos que queremos animar
-          const totalElements = 3; // Título + 2 columnas
+          const totalElements = 3;
           let count = 0;
-          
           const animate = () => {
             count++;
             setVisibleElements(count);
             if (count < totalElements) {
-              animationTimeout.current = setTimeout(animate, 200); // Retardo entre elementos
+              animationTimeout.current = setTimeout(animate, 200);
             }
           };
-          
           animate();
         } else {
-          // Cuando sale de la vista, limpiamos los timeouts
           if (animationTimeout.current) {
             clearTimeout(animationTimeout.current);
           }
@@ -59,9 +51,17 @@ const About = () => {
     };
   }, []);
 
+  
   return (
-    <section id="about" ref={aboutRef}>
-      <h1 className={`section-title fade-element ${visibleElements >= 1 ? 'visible' : ''}`}>Sobre mí</h1>
+    <section
+      id="about"
+      ref={aboutRef}
+      
+    >
+      
+      <h1 className={`section-title fade-element ${visibleElements >= 1 ? 'visible' : ''}`}>
+        Sobre mí
+      </h1>
       
       <div className="about-section">
         <div className={`about-description fade-element ${visibleElements >= 2 ? 'visible' : ''}`}>
@@ -88,11 +88,11 @@ const About = () => {
         </div>
 
         <div className={`about-info fade-element ${visibleElements >= 3 ? 'visible' : ''}`}>
-          <h2 className="info-title">Informacion basica</h2>
+          <h2 className="info-title">Información basica</h2>
           <div className="info-item"><strong>EDAD:</strong> 22</div>
           <div className="info-item"><strong>EMAIL:</strong> luis604@outlook.com</div>
-          <div className="info-item"><strong>TELEFONO:</strong> +52 5576334173</div>
-          <div className="info-item"><strong>DIRECCION:</strong> Ciudad de México, México</div>
+          
+          <div className="info-item"><strong>DIRECCIÓN:</strong> Estado de México, Cuatitlan Izcalli, 54769.</div>
           <div className="info-item"><strong>IDIOMAS:</strong>Español (nativo), Ingles (Intermedio)</div>
         </div>
       </div>
