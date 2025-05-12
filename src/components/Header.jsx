@@ -56,7 +56,7 @@ const Header = ({ toggleDesign }) => {
           <li className="nav-item"><a href="#skills">Habilidades</a></li>
           <li className="nav-item"><a href="#portfolio">Certificados</a></li>
           <li className="nav-item"><a href="#contact">Contacto</a></li>
-          <li className="nav-item"><a href="#proyectosactivos">Proyectos en desarrollo</a></li>
+          <li className="nav-item"><a href="#projects">Proyectos en desarrollo</a></li>
         </ul>
       </div>
 
