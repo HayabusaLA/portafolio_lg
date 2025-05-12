@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/portafolio_lg/static/css/main.63802d94.css",
-    "main.js": "/portafolio_lg/static/js/main.f3c83aeb.js",
+    "main.css": "/portafolio_lg/static/css/main.4f506afa.css",
+    "main.js": "/portafolio_lg/static/js/main.dd3ee9fc.js",
     "static/media/bgPage.jpeg": "/portafolio_lg/static/media/bgPage.9cad4463b8f9e0081f57.jpeg",
     "static/media/DataCertificado.pdf": "/portafolio_lg/static/media/DataCertificado.6da00a71fa5d7a4e3040.pdf",
     "static/media/doccare.png": "/portafolio_lg/static/media/doccare.8b92a087cfa1ba266213.png",
     "static/media/EconomiaCertificado.pdf": "/portafolio_lg/static/media/EconomiaCertificado.ccdd41d4675e6a0d7505.pdf",
     "static/media/titor.png": "/portafolio_lg/static/media/titor.3a5ccf79cbc92854003d.png",
     "static/media/apt.png": "/portafolio_lg/static/media/apt.648eff6c152f4babae7a.png",
-    "static/media/CV_Profesional.pdf": "/portafolio_lg/static/media/CV_Profesional.26333064c6169f40979e.pdf",
+    "static/media/CV_ProfesionalCorregido.pdf": "/portafolio_lg/static/media/CV_ProfesionalCorregido.875734e21fc4ae7d2f0c.pdf",
+    "static/media/SG.jpg": "/portafolio_lg/static/media/SG.4f4dcca75f4e18c5284b.jpg",
     "static/media/itesm.png": "/portafolio_lg/static/media/itesm.dc106162b19a59eae8f5.png",
+    "static/media/CR.jpeg": "/portafolio_lg/static/media/CR.953c9927efb5b0380a77.jpeg",
+    "static/media/placeholder.jpg": "/portafolio_lg/static/media/placeholder.e8a7deba46e32a80d90b.jpg",
     "static/media/utec.png": "/portafolio_lg/static/media/utec.c626b2cb0456ddb60183.png",
     "static/media/PostamanAPI.png": "/portafolio_lg/static/media/PostamanAPI.b492750aa94f7f88fbe6.png",
     "index.html": "/portafolio_lg/index.html",
-    "main.63802d94.css.map": "/portafolio_lg/static/css/main.63802d94.css.map",
-    "main.f3c83aeb.js.map": "/portafolio_lg/static/js/main.f3c83aeb.js.map"
+    "main.4f506afa.css.map": "/portafolio_lg/static/css/main.4f506afa.css.map",
+    "main.dd3ee9fc.js.map": "/portafolio_lg/static/js/main.dd3ee9fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.63802d94.css",
-    "static/js/main.f3c83aeb.js"
+    "static/css/main.4f506afa.css",
+    "static/js/main.dd3ee9fc.js"
   ]
 }
