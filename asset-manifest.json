@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafolio_lg/static/css/main.4f506afa.css",
-    "main.js": "/portafolio_lg/static/js/main.5133baa3.js",
+    "main.js": "/portafolio_lg/static/js/main.6a961fe4.js",
     "static/media/bgPage.jpeg": "/portafolio_lg/static/media/bgPage.9cad4463b8f9e0081f57.jpeg",
     "static/media/DataCertificado.pdf": "/portafolio_lg/static/media/DataCertificado.6da00a71fa5d7a4e3040.pdf",
     "static/media/doccare.png": "/portafolio_lg/static/media/doccare.8b92a087cfa1ba266213.png",
@@ -17,10 +17,10 @@
     "static/media/PostamanAPI.png": "/portafolio_lg/static/media/PostamanAPI.b492750aa94f7f88fbe6.png",
     "index.html": "/portafolio_lg/index.html",
     "main.4f506afa.css.map": "/portafolio_lg/static/css/main.4f506afa.css.map",
-    "main.5133baa3.js.map": "/portafolio_lg/static/js/main.5133baa3.js.map"
+    "main.6a961fe4.js.map": "/portafolio_lg/static/js/main.6a961fe4.js.map"
   },
   "entrypoints": [
     "static/css/main.4f506afa.css",
-    "static/js/main.5133baa3.js"
+    "static/js/main.6a961fe4.js"
   ]
 }
