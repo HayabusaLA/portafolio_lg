@@ -6,7 +6,6 @@ const skills = [
   { name: 'CSS', color: '#4ECDC4' },
   { name: 'JavaScript', color: '#FFD166' },
   { name: 'C#', color: '#06D6A0' },
-  { name: 'Bootstrap', color: '#118AB2' },
   { name: 'Python', color: '#073B4C' },
   { name: 'Microsoft Office', color: '#FF6B6B' },
   { name: 'PowerBI', color: '#073B4C' },
